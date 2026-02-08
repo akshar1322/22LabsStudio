@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Menu } from "lucide-react";
+import { X } from "lucide-react";
 
 const navLinks = [
     { name: 'Work', href: '/work' },
@@ -117,3 +117,4 @@ export function Header() {
         </>
     );
 }
+
