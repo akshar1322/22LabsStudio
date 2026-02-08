@@ -1,0 +1,10 @@
+import { cn } from "@/app/utils/cn";
+import React from "react";
+
+export function Container({ className, children }: { className?: string; children: React.ReactNode }) {
+    return (
+        <div className={cn("mx-auto w-full max-w-[1440px] px-6 md:px-12", className)}>
+            {children}
+        </div>
+    );
+}
