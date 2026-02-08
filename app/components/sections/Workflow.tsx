@@ -37,11 +37,14 @@ export function Workflow() {
     }, []);
 
     return (
-        <section id="process" ref={sectionRef} className="py-32 bg-zinc-950 text-white relative">
+        <section id="process" ref={sectionRef} className="py-24 md:py-32 bg-zinc-950 text-white relative">
             <Container>
-                <div className="mb-24 text-center">
-                    <span className="text-accent text-sm font-mono uppercase tracking-widest mb-4 block">Our Process</span>
-                    <h2 className="text-4xl md:text-6xl font-display font-bold uppercase">The Pipeline</h2>
+                <div className="mb-16 md:mb-24 text-center">
+                    <span className="text-accent text-sm font-mono uppercase tracking-[0.3em] mb-4 block">Our Process</span>
+                    <h2 className="font-display font-bold uppercase leading-none"
+                        style={{ fontSize: 'clamp(2.5rem, 8vw, 6rem)' }}>
+                        The Pipeline
+                    </h2>
                 </div>
 
                 <div className="relative max-w-4xl mx-auto">

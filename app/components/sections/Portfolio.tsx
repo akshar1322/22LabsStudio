@@ -79,17 +79,20 @@ export function Portfolio() {
     }, []);
 
     return (
-        <section id="work" className="py-32 bg-zinc-950 text-white relative">
+        <section id="work" className="py-24 md:py-32 bg-zinc-950 text-white relative">
             <Container>
-                <div className="flex flex-col md:flex-row justify-between items-end mb-16">
-                    <div>
-                        <h2 className="text-6xl md:text-8xl font-display font-black uppercase tracking-tighter mb-4">Selected Work</h2>
-                        <p className="text-zinc-500 font-mono text-sm tracking-widest uppercase">/ Recent Projects 2024-2025</p>
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-20">
+                    <div className="max-w-3xl">
+                        <h2 className="font-display font-black uppercase tracking-tighter mb-4 leading-[0.9]"
+                            style={{ fontSize: 'clamp(3rem, 10vw, 8rem)' }}>
+                            Selected Work
+                        </h2>
+                        <p className="text-zinc-500 font-mono text-xs md:text-sm tracking-widest uppercase">/ Recent Projects 2024-2025</p>
                     </div>
-                    <div className="hidden md:block">
-                        <div className="text-right text-xs font-mono text-zinc-600">
+                    <div className="hidden lg:block">
+                        <div className="text-right text-[10px] font-mono text-zinc-600 uppercase tracking-tighter">
                             Total Projects: {projects.length} <br />
-                            Status: Production
+                            Status: Production Ready
                         </div>
                     </div>
                 </div>

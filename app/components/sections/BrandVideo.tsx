@@ -19,12 +19,13 @@ export function BrandVideo() {
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black" />
 
             {/* Content */}
-            <Container className="relative z-10 text-center space-y-8">
-                <h2 className="text-8xl md:text-[10rem] font-display font-black text-white mix-blend-difference tracking-tighter leading-none select-none">
-                    22<span className="text-accent">LABS</span>
+            <Container className="relative z-10 text-center space-y-6 md:space-y-8">
+                <h2 className="font-display font-black text-white mix-blend-difference tracking-tighter leading-none select-none uppercase"
+                    style={{ fontSize: 'clamp(4rem, 20vw, 12rem)' }}>
+                    22<span className="text-accent italic">LABS</span>
                 </h2>
 
-                <p className="text-xl md:text-2xl font-light text-white/80 tracking-widest uppercase">
+                <p className="text-sm md:text-xl lg:text-2xl font-light text-white/60 tracking-[0.3em] uppercase max-w-2xl mx-auto">
                     Crafting the Future of Digital Entertainment
                 </p>
             </Container>

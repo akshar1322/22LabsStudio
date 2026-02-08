@@ -67,14 +67,17 @@ export function Services() {
     }, []);
 
     return (
-        <section id="services" ref={sectionRef} className="py-32 bg-zinc-950 relative overflow-hidden text-white">
+        <section id="services" ref={sectionRef} className="py-24 md:py-32 bg-zinc-950 relative overflow-hidden text-white">
             {/* Background radial glow */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
 
             <Container>
-                <div className="mb-20">
-                    <h2 className="text-4xl md:text-6xl font-display font-bold uppercase tracking-tighter text-white mb-6"> Our Services </h2>
-                    <div className="w-24 h-1 bg-accent" />
+                <div className="mb-12 md:mb-20">
+                    <h2 className="font-display font-bold uppercase tracking-tighter text-white mb-6 leading-[0.9]"
+                        style={{ fontSize: 'clamp(2.5rem, 8vw, 6rem)' }}>
+                        Our Services
+                    </h2>
+                    <div className="w-20 md:w-24 h-1 bg-accent" />
                 </div>
 
                 <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

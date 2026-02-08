@@ -39,25 +39,26 @@ export function Contact() {
     };
 
     return (
-        <section id="contact" className="py-32 bg-zinc-950 text-white relative overflow-hidden">
+        <section id="contact" className="py-24 md:py-32 bg-zinc-950 text-white relative overflow-hidden">
             <Container>
-                <div className="grid md:grid-cols-2 gap-16">
+                <div className="grid md:grid-cols-2 gap-12 md:gap-16">
                     <div>
-                        <h2 className="text-6xl md:text-8xl font-display font-black uppercase tracking-tighter mb-8 leading-[0.8]">
-                            Let&apos;s <br /> <span className="text-accent">Create.</span>
+                        <h2 className="font-display font-black uppercase tracking-tighter mb-8 leading-[0.8]"
+                            style={{ fontSize: 'clamp(3rem, 10vw, 8rem)' }}>
+                            Let&apos;s <br /> <span className="text-accent underline decoration-1 underline-offset-[12px]">Create.</span>
                         </h2>
-                        <p className="text-zinc-400 text-lg mb-12 max-w-md">
+                        <p className="text-zinc-400 text-base md:text-lg mb-8 md:mb-12 max-w-md">
                             Ready to build the unseen? Reach out for collaborations, careers, or project inquiries.
                         </p>
 
                         <div className="space-y-4">
-                            <a href="mailto:hello@22labs.studio" className="block text-xl hover:text-accent transition-colors">hello@22labs.studio</a>
-                            <p className="text-zinc-500">+1 (555) 000-0000</p>
-                            <p className="text-zinc-500">Tokyo / Los Angeles / Remote</p>
+                            <a href="mailto:hello@22labs.studio" className="block text-lg md:text-xl hover:text-accent transition-colors font-mono tracking-tighter">hello@22labs.studio</a>
+                            <p className="text-zinc-500 font-mono text-sm tracking-widest">+1 (555) 000-0000</p>
+                            <p className="text-zinc-500 font-mono text-sm tracking-widest uppercase">Tokyo / Los Angeles / Remote</p>
                         </div>
                     </div>
 
-                    <form onSubmit={handleSubmit} className="space-y-8">
+                    <form onSubmit={handleSubmit} className="space-y-6 md:space-y-8 mt-12 md:mt-0">
                         <div className="group relative">
                             <input
                                 type="text"

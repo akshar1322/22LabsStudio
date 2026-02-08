@@ -20,9 +20,20 @@
   }
 }
 
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
+}
+
+::selection {
+  background-color: var(--accent);
+  color: white;
 }
 
 /* Typography Defaults */

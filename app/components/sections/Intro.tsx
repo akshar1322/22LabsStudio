@@ -47,10 +47,10 @@ export function Intro() {
     }, []);
 
     return (
-        <section ref={containerRef} className="py-32 bg-zinc-950 text-white relative">
-            <Container className="grid md:grid-cols-2 gap-16 items-center">
+        <section ref={containerRef} className="py-24 md:py-32 bg-zinc-950 text-white relative">
+            <Container className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
                 {/* Left Grid: Image */}
-                <div ref={imageRef} className="relative aspect-[4/5] w-full overflow-hidden rounded-sm border border-white/10 group">
+                <div ref={imageRef} className="relative aspect-[4/5] w-full overflow-hidden rounded-sm border border-white/10 group order-2 md:order-1">
                     <div className="absolute inset-0 bg-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
                     <Image
                         src="/images/6073527895277113021 (1).jpg"
@@ -61,9 +61,10 @@ export function Intro() {
                 </div>
 
                 {/* Right Grid: Content */}
-                <div ref={textRef} className="space-y-8">
-                    <h2 className="text-4xl md:text-5xl font-display font-bold uppercase tracking-tight leading-[0.9]">
-                        Architects of the <br /> <span className="text-accent">Unreal.</span>
+                <div ref={textRef} className="space-y-8 order-1 md:order-2">
+                    <h2 className="font-display font-bold uppercase tracking-tight leading-[0.9]"
+                        style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)' }}>
+                        Architects of the <br /> <span className="text-accent underline decoration-1 underline-offset-8">Unreal.</span>
                     </h2>
 
                     <div className="w-20 h-1 bg-white/20" />
@@ -73,7 +74,7 @@ export function Intro() {
                         focuses on the balance between cinematic visual quality and real-time
                         performance, creating 3D assets that are both expressive and technically
                         reliable.
-                        </p>
+                    </p>
 
 
                     <p className="text-zinc-400 text-lg leading-relaxed font-light">
@@ -81,16 +82,16 @@ export function Intro() {
                         intention. Characters, environments, and digital scenes are crafted with
                         close attention to form, scale, and detail, ensuring they integrate
                         naturally into real-time workflows.
-                        </p>
+                    </p>
 
                     <div className="pt-4">
-                            <span className="text-sm font-mono uppercase tracking-widest text-zinc-500 block mb-2">
-                                Core Philosophy
-                            </span>
-                            <p className="text-xl font-display text-white italic">
-                                &quot;Clarity, balance, and purpose guide every asset.&quot;
-                            </p>
-    </div>
+                        <span className="text-sm font-mono uppercase tracking-widest text-zinc-500 block mb-2">
+                            Core Philosophy
+                        </span>
+                        <p className="text-xl font-display text-white italic">
+                            &quot;Clarity, balance, and purpose guide every asset.&quot;
+                        </p>
+                    </div>
 
                 </div>
             </Container>
