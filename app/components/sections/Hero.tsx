@@ -61,7 +61,7 @@ export function Hero() {
     }, []);
 
     return (
-        <section ref={containerRef} className="relative w-full h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-black">
+        <section ref={containerRef} className="relative w-full h-screen min-h-[500px] flex items-center justify-center overflow-hidden bg-black">
             {/* Cinematic Background Video */}
             <div className="hero-video absolute inset-0 w-full h-[120%] -top-[10%] z-0 pointer-events-none">
                 <video
@@ -81,13 +81,13 @@ export function Hero() {
 
             <Container className="relative z-20 flex flex-col items-center text-center px-4 md:px-8">
                 <div className="max-w-[1200px] w-full">
-                    <h1 ref={headlineRef} className="font-display font-black leading-[0.85] tracking-[calc(-0.03em)] uppercase mb-6 md:mb-10 lg:mb-12 mix-blend-difference text-white"
+                    <h1 ref={headlineRef} className="font-display font-black leading-[0.8] tracking-[calc(-0.03em)] uppercase mb-4 md:mb-6 lg:mb-8 mix-blend-difference text-white"
                         style={{ fontSize: 'clamp(2.5rem, 12vw, 8rem)' }}>
                         <SplitText text="Cinematic 3D" className="block" charClassName="translate-y-full opacity-0" />
                         <SplitText text="For Digital Worlds" className="block text-outline-white" charClassName="translate-y-full opacity-0" />
                     </h1>
 
-                    <p ref={subRef} className="max-w-xl md:max-w-2xl mx-auto text-neutral-300 text-base md:text-xl lg:text-2xl font-light tracking-wide mb-8 md:mb-12 lg:mb-16 drop-shadow-md opacity-0">
+                    <p ref={subRef} className="max-w-xl md:max-w-2xl mx-auto text-neutral-300 text-base md:text-xl lg:text-2xl font-light tracking-wide mb-6 md:mb-8 lg:mb-10 drop-shadow-md opacity-0">
                         High-end 3D art production studio built for AAA games and cinematic experiences.
                     </p>
 
