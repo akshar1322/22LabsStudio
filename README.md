@@ -44,3 +44,4 @@ An ultra-high-end, cinematic website for a 3D & CG art studio, built with Next.j
 - **Theme Colors**: Edit `tailwind.config.ts` to change `--accent` color.
 - **Content**: Update arrays in `app/components/sections/` files.
 - **Email System**: Uses Nodemailer. Configure SMTP settings in `.env.local`.
+# 22LabsStudio
